@@ -1,3 +1,21 @@
+nav a{
+  margin: 5px;
+  text-decoration: none;
+
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+
+nav{
+  display: flex;
+  position: fixed;
+  margin-left: 50%;
+  color: azure;
+}
+
 .pg {
   align-items: center;
   justify-content: center;

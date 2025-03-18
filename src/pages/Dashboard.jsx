@@ -1,15 +1,15 @@
-import { Link, Routes, Route } from 'react-router-dom';
-import Settings from "./Settings";
+ import { Link, Routes, Route } from 'react-router-dom';
+ import Settings from "./Settings";
 
 function Dashboard(){
     return(
         <div className="pg">
-            <nav>
+             <nav>
                 <Link to="settings">Settings</Link>
             </nav>
             <Routes>
                 <Route path="settings" element={<Settings/>}/>
-            </Routes>
+            </Routes> 
         </div>
     )
 }

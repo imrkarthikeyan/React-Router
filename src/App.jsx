@@ -1,9 +1,10 @@
 import './App.css'
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // import About from './pages/About'
 // import Home from './pages/Home'
 // import Contact from './pages/Contact';
-import Rollno from './pages/Rollno';
+// import Rollno from './pages/Rollno';
+import Dashboard from './pages/Dashboard';
 function App() {
 
   return (
@@ -21,13 +22,19 @@ function App() {
     // </BrowserRouter>
 
 
+    // <BrowserRouter>
+    //   <nav>
+    //     <Link to="/Rollno/1">Roll No 1</Link>
+    //     <Link to="/Rollno/2">Roll No 2</Link>
+    //   </nav>
+    //   <Routes>
+    //     <Route path="/Rollno/:rno" element={<Rollno/>}/>
+    //   </Routes>
+    // </BrowserRouter>
+
     <BrowserRouter>
-      <nav>
-        <Link to="/Rollno/1">Roll No 1</Link>
-        <Link to="/Rollno/2">Roll No 2</Link>
-      </nav>
       <Routes>
-        <Route path="/Rollno/:rno" element={<Rollno/>}/>
+        <Route path='/dashboard/*' element={<Dashboard/>}/>
       </Routes>
     </BrowserRouter>
   )
